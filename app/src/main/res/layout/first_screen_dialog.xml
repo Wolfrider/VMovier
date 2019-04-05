@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/home_first_screen_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_1584px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:clickable="true"
+        android:scaleType="fitXY" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/home_first_screen_countdown"
+        android:layout_width="@dimen/dimen_180px"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_60px"
+        android:padding="@dimen/dimen_24px"
+        android:background="@drawable/black_80_background"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_42px"
+        android:gravity="center"
+        tools:text="10 跳过" />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/home_first_screen_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home_first_screen_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:src="@drawable/app_launcher"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home_first_screen_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dimen_42px"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_font_36px"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/copyright"/>
+
+
+</android.support.constraint.ConstraintLayout>

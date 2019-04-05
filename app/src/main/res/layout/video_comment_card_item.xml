@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ViewStub
+        android:id="@+id/video_comment_total_view_stub"
+        android:layout="@layout/video_comment_total_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+    <include
+        android:id="@+id/video_comment_item_layout"
+        layout="@layout/video_comment_card_item_layout" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/video_comment_sub_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_180px"
+        android:visibility="visible"/>
+</LinearLayout>

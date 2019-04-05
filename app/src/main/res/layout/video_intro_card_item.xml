@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_144px"
+    android:paddingBottom="@dimen/dimen_144px"
+    android:paddingLeft="@dimen/dimen_48px"
+    android:paddingRight="@dimen/dimen_48px">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_intro_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_54px"
+        tools:text="给脑洞跪了" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_intro_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_48px"
+        app:layout_constraintTop_toBottomOf="@id/video_intro_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/dimen_42px"
+        tools:text="广告" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_intro_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_120px"
+        app:layout_constraintTop_toBottomOf="@id/video_intro_subtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical|left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_45px"
+        tools:text="泰国广告在" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_intro_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_18px"
+        android:layout_marginTop="@dimen/dimen_90px"
+        app:layout_constraintTop_toBottomOf="@id/video_intro_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="@dimen/dimen_48px"
+        android:text="@string/read_more" />
+</android.support.constraint.ConstraintLayout>

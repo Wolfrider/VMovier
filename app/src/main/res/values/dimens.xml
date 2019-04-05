@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_3px">1dp</dimen>
+    <dimen name="dimen_6px">2dp</dimen>
+    <dimen name="dimen_12px">4dp</dimen>
+    <dimen name="dimen_15px">5dp</dimen>
+    <dimen name="dimen_18px">6dp</dimen>
+    <dimen name="dimen_24px">8dp</dimen>
+    <dimen name="dimen_30px">10dp</dimen>
+    <dimen name="dimen_36px">12dp</dimen>
+    <dimen name="dimen_42px">14dp</dimen>
+    <dimen name="dimen_45px">15dp</dimen>
+    <dimen name="dimen_48px">16dp</dimen>
+    <dimen name="dimen_54px">18dp</dimen>
+    <dimen name="dimen_60px">20dp</dimen>
+    <dimen name="dimen_72px">24dp</dimen>
+    <dimen name="dimen_90px">30dp</dimen>
+    <dimen name="dimen_108px">36dp</dimen>
+    <dimen name="dimen_120px">40dp</dimen>
+    <dimen name="dimen_138px">46dp</dimen>
+    <dimen name="dimen_144px">48dp</dimen>
+    <dimen name="dimen_168px">56dp</dimen>
+    <dimen name="dimen_180px">60dp</dimen>
+    <dimen name="dimen_210px">70dp</dimen>
+    <dimen name="dimen_240px">80dp</dimen>
+    <dimen name="dimen_270px">90dp</dimen>
+    <dimen name="dimen_384px">128dp</dimen>
+    <dimen name="dimen_420px">140dp</dimen>
+    <dimen name="dimen_480px">160dp</dimen>
+    <dimen name="dimen_540px">180dp</dimen>
+    <dimen name="dimen_606px">202dp</dimen>
+    <dimen name="dimen_930px">310dp</dimen>
+    <dimen name="dimen_1584px">528dp</dimen>
+
+    <dimen name="dimen_font_24px">8sp</dimen>
+    <dimen name="dimen_font_27px">9sp</dimen>
+    <dimen name="dimen_font_30px">10sp</dimen>
+    <dimen name="dimen_font_33px">11sp</dimen>
+    <dimen name="dimen_font_36px">12sp</dimen>
+    <dimen name="dimen_font_42px">14sp</dimen>
+    <dimen name="dimen_font_48px">16sp</dimen>
+    <dimen name="dimen_font_60px">20sp</dimen>
+    <dimen name="dimen_font_90px">30sp</dimen>
+
+</resources>

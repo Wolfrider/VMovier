@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+    android:layout_width="match_parent" android:layout_height="@dimen/dimen_138px">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/discovery_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_42px"
+        tools:text="今日" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/discovery_title_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/discovery_title"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dimen_42px"
+        android:gravity="center"
+        android:text="@string/more"
+        android:textColor="#80FFFFFF"
+        android:textSize="@dimen/dimen_font_36px" />
+
+</android.support.constraint.ConstraintLayout>

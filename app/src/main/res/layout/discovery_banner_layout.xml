@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.oliver.vmovier.view.banner.AutoBannerView
+        android:id="@+id/discovery_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_606px"
+        app:autoScroll="false"
+        app:interval="3000"
+        app:indicatorPaddingBottom="@dimen/dimen_12px"
+        app:indicatorSpacing="@dimen/dimen_12px"
+        app:indicatorSelected="@drawable/indicator_selected"
+        app:indicatorUnSelected="@drawable/indicator_unselected">
+    </com.oliver.vmovier.view.banner.AutoBannerView>
+</FrameLayout>

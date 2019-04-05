@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:background="@android:color/black"
+    android:paddingTop="@dimen/dimen_30px"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/search_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:layout_marginLeft="@dimen/dimen_30px"
+        android:layout_marginRight="@dimen/dimen_30px"
+        android:layout_marginBottom="@dimen/dimen_72px"
+        android:padding="@dimen/dimen_6px"
+        android:gravity="center_vertical">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/search_button"
+            android:layout_width="@dimen/dimen_72px"
+            android:layout_height="@dimen/dimen_72px"
+            android:layout_marginLeft="@dimen/dimen_18px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home_search"/>
+        <android.support.v7.widget.AppCompatEditText
+            android:theme="@style/EditText"
+            android:id="@+id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toRightOf="@id/search_button"
+            android:layout_toLeftOf="@+id/search_input_close"
+            android:layout_marginLeft="@dimen/dimen_18px"
+            android:layout_centerVertical="true"
+            android:hint="@string/search_hint"
+            android:textColorHint="#888888"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_42px"
+            android:maxEms="10"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/search_input_close"
+            android:layout_width="@dimen/dimen_72px"
+            android:layout_height="@dimen/dimen_72px"
+            android:layout_marginLeft="@dimen/dimen_18px"
+            android:layout_marginRight="@dimen/dimen_18px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:src="@drawable/close"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/search_recommend_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:textColor="#888888"
+            android:textSize="@dimen/dimen_42px"
+            android:text="@string/search_recommend"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recommend_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.oliver.vmovier.view.dropdown.DropDownMenu
+        android:id="@+id/search_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_72px"
+        android:orientation="horizontal">
+    </com.oliver.vmovier.view.dropdown.DropDownMenu>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_42px">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_comment_avatar"
+        android:layout_width="@dimen/dimen_108px"
+        android:layout_height="@dimen/dimen_108px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitXY"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/video_comment_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="@dimen/dimen_144px"
+        android:orientation="vertical"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_comment_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/video_comment_left_guideline"
+        app:layout_constraintTop_toTopOf="@id/video_comment_avatar"
+        android:gravity="center_vertical|left"
+        android:textColor="#80000000"
+        android:textSize="@dimen/dimen_36px"
+        android:lines="1"
+        tools:text="牛肉" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_comment_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/video_comment_left_guideline"
+        app:layout_constraintTop_toBottomOf="@id/video_comment_user_name"
+        android:gravity="center_vertical|left"
+        android:textColor="#33000000"
+        android:textSize="@dimen/dimen_30px"
+        android:lines="1"
+        tools:text="6天前" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_comment_approve_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_30px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/video_comment_user_name"
+        android:gravity="center_vertical|left"
+        android:textColor="#33000000"
+        android:textSize="@dimen/dimen_36px"
+        android:lines="1"
+        tools:text="30" />
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_comment_approve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_42px"
+        app:layout_constraintRight_toLeftOf="@id/video_comment_approve_count"
+        app:layout_constraintBottom_toBottomOf="@id/video_comment_user_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/comment_approve"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/video_comment_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18px"
+        app:layout_constraintLeft_toLeftOf="@id/video_comment_left_guideline"
+        app:layout_constraintRight_toLeftOf="@id/video_comment_approve_count"
+        app:layout_constraintTop_toBottomOf="@id/video_comment_avatar"
+        android:gravity="center_horizontal|left"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_45px"
+        tools:text="看到烟被打了" />
+
+</android.support.constraint.ConstraintLayout>

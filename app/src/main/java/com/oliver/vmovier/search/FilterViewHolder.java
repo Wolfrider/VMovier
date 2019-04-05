@@ -1,0 +1,57 @@
+package com.oliver.vmovier.search;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatTextView;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.View;
+import com.google.android.flexbox.FlexboxLayoutManager.LayoutParams;
+import com.oliver.vmovier.R;
+import com.oliver.vmovier.base.recyclerview.BaseRVViewHolder;
+import com.oliver.vmovier.base.recyclerview.IRVItemVO;
+
+public class FilterViewHolder extends BaseRVViewHolder {
+
+    public interface OnClickListener {
+
+        void onClick(String value);
+    }
+
+    protected AppCompatTextView mTextView;
+    protected OnClickListener mOnClickListener;
+
+    public FilterViewHolder(@NonNull Context context, @NonNull View itemView, @NonNull OnClickListener listener) {
+        super(context, itemView);
+        mOnClickListener = listener;
+    }
+
+    @Override
+    public void onBindData(@NonNull IRVItemVO data) {
+        final FilterVO filterVO = (FilterVO)data;
+        mTextView.setText(filterVO.getName());
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mOnClickListener.onClick(filterVO.getName());
+            }
+        });
+    }
+
+    @Override
+    protected void setupView() {
+        mTextView = (AppCompatTextView)itemView;
+        LayoutParams layoutParams = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+        int left = mContext.getResources().getDimensionPixelSize(R.dimen.dimen_12px);
+        int top = mContext.getResources().getDimensionPixelSize(R.dimen.dimen_12px);
+        layoutParams.setMargins(left, top, 0, 0);
+        mTextView.setLayoutParams(layoutParams);
+        mTextView.setGravity(Gravity.CENTER_VERTICAL|Gravity.LEFT);
+        mTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mContext.getResources().getDimension(R.dimen.dimen_54px));
+        mTextView.setTextColor(Color.WHITE);
+        int paddingTop = mContext.getResources().getDimensionPixelSize(R.dimen.dimen_12px);
+        int paddingLeft = mContext.getResources().getDimensionPixelOffset(R.dimen.dimen_18px);
+        mTextView.setPadding(paddingLeft, paddingTop, paddingLeft, paddingTop);
+    }
+}

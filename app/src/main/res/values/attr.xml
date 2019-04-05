@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutoBannerView">
+        <attr name="autoScroll" format="boolean"/>
+        <attr name="interval" format="integer"/>
+        <attr name="indicatorPaddingBottom" format="dimension"/>
+        <attr name="indicatorSpacing" format="dimension"/>
+        <attr name="indicatorSelected" format="reference"/>
+        <attr name="indicatorUnSelected" format="reference"/>
+    </declare-styleable>
+
+</resources>

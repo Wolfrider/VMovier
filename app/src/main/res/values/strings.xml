@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VMovier</string>
+    <string name="exit_tips">再按一次退出</string>
+    <string name="copyright">Copyright 2019 VMovier</string>
+    <string name="count_down_format">%d 跳过</string>
+    <string name="discovery">发现</string>
+    <string name="channel">频道</string>
+    <string name="me">我的</string>
+    <string name="more">more</string>
+    <string name="cache">缓存</string>
+    <string name="read_more">阅读全文 —></string>
+    <string name="search_hint">请输入要搜索的内容</string>
+    <string name="search_recommend">热门搜索</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/discovery_album_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foreground="#34000000"
+        android:scaleType="fitXY"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/discovery_album_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_30px" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/discovery_album_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/discovery_album_start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/discovery_album_subtitle"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:gravity="center_vertical|left"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_42px"
+        android:textStyle="bold"
+        tools:text="你是红玫瑰"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/discovery_album_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/discovery_album_start"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dimen_48px"
+        android:gravity="center_vertical|left"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_36px"
+        tools:text="这次为自己而美"/>
+
+</android.support.constraint.ConstraintLayout>
